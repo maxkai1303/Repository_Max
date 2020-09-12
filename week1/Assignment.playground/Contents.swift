@@ -121,12 +121,12 @@ for friend in myFriends{
 
 //2-7. How to get the first element in an array?
 
-myFriends[0]
+myFriends.first
 
 
 //2-8. How to get the last element in an array?
 
-myFriends[3]
+myFriends.last
 
 //2-9. Please create an dictionary with keys of type String, value of type Int, and save it in a variable named ​myCountryNumber
 
