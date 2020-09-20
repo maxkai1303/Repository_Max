@@ -15,6 +15,7 @@ struct Person : PoliceMan , ToolMan {
     func fixComputer() -> Void { }
     
     let name: String
+    let toolman: ToolMan
 }
 
 struct Engineer: ToolMan {
@@ -22,5 +23,5 @@ struct Engineer: ToolMan {
 }
 
 
-let example = Person (name: "Steven")
+let example = Person (name: "Steven", toolman: Engineer())
 
