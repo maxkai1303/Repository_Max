@@ -7,7 +7,10 @@
 //● Please explain what is enum ​associate value​ and how it works
 
 enum Gasline: String {
-    case gas92, gas95, gas98, Diesel
+    case gas92 = "92",
+         gas95 = "95",
+         gas98 = "98",
+         Diesel = "Diesel"
 }
     
     func getPrice(price: Gasline) -> Float {

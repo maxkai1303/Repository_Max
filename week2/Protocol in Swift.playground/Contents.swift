@@ -1,7 +1,7 @@
 //    Protocol in Swift
 // 1. Declare a struct ​Person​ with a ​name​ property type String and a protocol name PoliceMan​. There is only one method ​arrestCriminals​ with no argument and return void in the protocol.
 
-protocol PoliceMan{
+protocol PoliceMan {
     func  arrestCriminals () -> Void
 }
 protocol ToolMan {
@@ -9,20 +9,18 @@ protocol ToolMan {
 }
 
 struct Person : PoliceMan , ToolMan {
-    func arrestCriminals() {
-        
-    }
     
-    func fixComputer() {
-        
-    }
+    func arrestCriminals() -> Void { }
+    
+    func fixComputer() -> Void { }
     
     let name: String
 }
 
-protocol Engineer : ToolMan {
-    
+struct Engineer: ToolMan {
+    func fixComputer() -> Void { }
 }
 
 
 let example = Person (name: "Steven")
+
