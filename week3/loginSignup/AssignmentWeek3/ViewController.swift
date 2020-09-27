@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     func logIn() throws {
-            if accountText.text == "appwork_school@gmail.com", passwordText.text == "1234" {
+            if accountText.text == "appworks_school@gmail.com", passwordText.text == "1234" {
                 showAlert(title: "Log In", message: "Success", preferredStyle: .alert)
             } else {
                 throw LogInError.failLogIn
